@@ -6,22 +6,7 @@ using System.Threading.Tasks;
 
 namespace RockPaperLizardSpock
 {
-    class Human : Player
+    class EasyMode
     {
-
-        public Human()
-        {
-
-        }
-
-
-        public override int ChooseGesture()
-        {
-            
-
-
-
-
-        }
     }
 }

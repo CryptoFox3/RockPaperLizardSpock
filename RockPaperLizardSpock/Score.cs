@@ -8,11 +8,8 @@ namespace RockPaperLizardSpock
 {
     class Score
     {
-        public int wins;
-        public int losses;
-        public int tie;
-
-        Score player = new Score();
+       
+        
 
     }
 }

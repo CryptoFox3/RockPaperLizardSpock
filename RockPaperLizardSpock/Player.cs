@@ -8,28 +8,64 @@ namespace RockPaperLizardSpock
 {
     public class Player
     {
-        public Player(Player temp)
+
+        public int choice;
+        public string name;
+        public int wins;
+        public int losses;
+
+        public Player()
         {
-            this.Name = temp.Name;
-            this.Wins = temp.Wins;
-            this.Losses = temp.Losses;
+
 
         }
-        public string Name;
-        public int Wins;
-        public int Losses;
-        public Player()
-    }
-    public class Player2 : Player
-    {
+        
 
-    }
-    class AI
-    {
+        public virtual int ChooseGesture()
+        {
+            int choice = 0;
+            Console.WriteLine("Please enter your gesture of choice for this round. \n Your options are: 'rock', 'paper', 'scissors', 'lizard', 'spock'");
+            string switchCondition = Console.ReadLine();
+            switchCondition.ToLower();
+
+            switch (switchCondition) { 
+                case "rock":
+                    choice = 0;
+                    break;
+                case "paper":
+                    choice = 1;
+                    break;
+                case "scissors":
+                    choice = 2;
+                    break;
+                case "spock":
+                    choice = 3;
+                    break;
+                case "lizard":
+                    choice = 4;
+                    break;
+            }
+            return choice;
+
+        }
+
+        public string GestureList()
+        {
+                List<string> GestureList = new List<string>();
+                GestureList.Add("rock");
+                GestureList.Add("paper");
+                GestureList.Add("scissors");
+                GestureList.Add("spock");
+                GestureList.Add("lizard");
 
 
 
 
+            return GestureList[choice];
+        }  
        
+ 
     }
+   
+
 }
