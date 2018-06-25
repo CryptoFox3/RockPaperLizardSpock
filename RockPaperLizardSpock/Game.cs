@@ -6,42 +6,54 @@ using System.Threading.Tasks;
 
 namespace RockPaperLizardSpock
 {
-    class Game
+    public class Game
     {
-        
+        Player playerOne;
+        Player playerTwo;
 
 
         public Game()
         {
-            StartGame();
+
 
         }
 
-        public void StartGame()
+        public void RunGame()
         {
-            Console.WriteLine("Welcome to the game! RULES HERE");
+            Console.WriteLine("Welcome to the game! This game is just like Rock, Paper, Scissors, but with the addition of lizard and spock. \n ");
+            SetGameType();
 
-            Console.WriteLine("What game type would you like to run? Please type 'single player' 'multiplayer' or 'simulation'");
-            string gameType = Console.ReadLine();
-            gameType.ToLower();
+            RunRound();
+
+
+        }
+
+        public void SetGameType()
+        {
+
+
+            Console.WriteLine("What game type would you like to run? Please type 'single player' or 'multiplayer'");
+            string gameType = Console.ReadLine().ToLower();
+
 
             if (gameType == "single player")
             {
-                Player playerOne = new Human();
-                Player playerTwo = new Computer();
+                playerOne = new Human();
+                playerTwo = new Computer();
+                Console.WriteLine("You have chosen a single player game against an AI");
             }
             else if (gameType == "multiplayer")
             {
-                Player playerOne = new Human();
-                Player playerTwo = new Human();
-            }
-            else (gameType == "simulation")
-            {
-                Player playerOne = new Computer();
-                Player playerTwo = new Computer();
-            }
+                playerOne = new Human();
+                playerTwo = new Human();
+                Console.WriteLine("You have chosen a multiplayer game against another person");
 
-            RunRound();
+            }
+            else
+            {
+                Console.WriteLine("Follow the directions");
+                SetGameType();
+            }
 
         }
 
@@ -50,13 +62,6 @@ namespace RockPaperLizardSpock
 
         public void RunRound()
         {
-            int gesture = playerOne.ChooseGesture();
-            int gesture2 = playerTwo.ChooseGesture();
-
-            Console.WriteLine("Player 1 has chosen " + playerOne.GestureList(gesture);
-
-
-            Console.WriteLine("Player 2 has chosen " + playerTwo.GestureList(gesture2);
 
 
 
@@ -65,27 +70,14 @@ namespace RockPaperLizardSpock
 
 
 
-            
-int winner = (5 + gesture - gesture2) % 5;
-
-            
 
 
 
 
-            if (playerOne.wins == 2)
-            {
-                Console.WriteLine("");
-            }
 
-            if (playerTwo.wins == 2)
-            {
-                Console.WriteLine("");
-            }
+
+
+
         }
-
-        
-
-        
     }
 }

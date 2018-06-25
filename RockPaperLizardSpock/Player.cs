@@ -11,8 +11,7 @@ namespace RockPaperLizardSpock
 
         public int choice;
         public string name;
-        public int wins;
-        public int losses;
+        public int score;
 
         public Player()
         {
@@ -21,9 +20,9 @@ namespace RockPaperLizardSpock
         }
         
 
-        public virtual int ChooseGesture()
+        public virtual void ChooseGesture()
         {
-            int choice = 0;
+            
             Console.WriteLine("Please enter your gesture of choice for this round. \n Your options are: 'rock', 'paper', 'scissors', 'lizard', 'spock'");
             string switchCondition = Console.ReadLine();
             switchCondition.ToLower();
@@ -44,24 +43,29 @@ namespace RockPaperLizardSpock
                 case "lizard":
                     choice = 4;
                     break;
+                default:
+                    Console.WriteLine("Please enter a valid gesture");
+                    ChooseGesture();
+                    break;
             }
-            return choice;
+            
 
         }
 
-        public string GestureList()
+        private static List<string> GestureList()
         {
-                List<string> GestureList = new List<string>();
-                GestureList.Add("rock");
-                GestureList.Add("paper");
-                GestureList.Add("scissors");
-                GestureList.Add("spock");
-                GestureList.Add("lizard");
-
-
-
-
-            return GestureList[choice];
+            List<string> GestureList = new List<string>();
+            GestureList.Add("Scissors cuts Paper");
+            GestureList.Add("Paper covers Rock");
+            GestureList.Add("Rock crushes Lizard");
+            GestureList.Add("Lizard poisons Spock");
+            GestureList.Add("Spock smashes Scissors");
+            GestureList.Add("Scissors decapitates Lizard");
+            GestureList.Add("Lizard eats Paper");
+            GestureList.Add("Paper disproves Spock");
+            GestureList.Add("Spock vaporizes Rock");
+            GestureList.Add("Rock crushes Scissors");
+            return GestureList;
         }  
        
  

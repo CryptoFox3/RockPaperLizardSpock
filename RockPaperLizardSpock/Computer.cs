@@ -13,12 +13,12 @@ namespace RockPaperLizardSpock
         {
 
         }
-        public override int ChooseGesture()
+        public override void ChooseGesture()
         {
-             int RandomNumber(int 0, int 4);
+             
             
                 Random random = new Random();
-                return random.Next(0, 4);
+                choice = random.Next(0, 4);
 
         }
     }

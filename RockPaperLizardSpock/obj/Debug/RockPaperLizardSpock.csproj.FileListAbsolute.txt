@@ -1,2 +1,7 @@
 C:\Users\pghod\Desktop\DevCodeCamp\6.19.18\RockPaperLizardSpock\RockPaperLizardSpock\obj\Debug\RockPaperLizardSpock.csprojAssemblyReference.cache
 C:\Users\pghod\Desktop\DevCodeCamp\6.19.18\RockPaperLizardSpock\RockPaperLizardSpock\obj\Debug\RockPaperLizardSpock.csproj.CoreCompileInputs.cache
+C:\Users\pghod\Desktop\DevCodeCamp\6.19.18\RockPaperLizardSpock\RockPaperLizardSpock\bin\Debug\RockPaperLizardSpock.exe.config
+C:\Users\pghod\Desktop\DevCodeCamp\6.19.18\RockPaperLizardSpock\RockPaperLizardSpock\bin\Debug\RockPaperLizardSpock.exe
+C:\Users\pghod\Desktop\DevCodeCamp\6.19.18\RockPaperLizardSpock\RockPaperLizardSpock\bin\Debug\RockPaperLizardSpock.pdb
+C:\Users\pghod\Desktop\DevCodeCamp\6.19.18\RockPaperLizardSpock\RockPaperLizardSpock\obj\Debug\RockPaperLizardSpock.exe
+C:\Users\pghod\Desktop\DevCodeCamp\6.19.18\RockPaperLizardSpock\RockPaperLizardSpock\obj\Debug\RockPaperLizardSpock.pdb

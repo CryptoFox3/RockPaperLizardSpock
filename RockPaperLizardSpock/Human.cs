@@ -15,7 +15,7 @@ namespace RockPaperLizardSpock
         }
 
 
-        public override int ChooseGesture()
+        public override void ChooseGesture()
         {
             
 
