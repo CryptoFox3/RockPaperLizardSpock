@@ -20,9 +20,6 @@ namespace RockPaperLizardSpock
             Game game = new Game();
             game.RunGame();
 
-          
-            
-
 
         }
     }
