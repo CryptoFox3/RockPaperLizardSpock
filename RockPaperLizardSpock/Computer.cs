@@ -21,6 +21,11 @@ namespace RockPaperLizardSpock
                 choice = random.Next(0, 4);
 
         }
+
+        public override void GetPlayerName()
+        {
+            name = "Computer Player";
+        }
     }
 
 }

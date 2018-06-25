@@ -38,16 +38,15 @@ namespace RockPaperLizardSpock
 
             if (gameType == "single player")
             {
-                playerOne = new Human();
-                playerTwo = new Computer();
                 Console.WriteLine("You have chosen a single player game against an AI");
+                playerOne = new Human();
+                playerTwo = new Computer();    
             }
             else if (gameType == "multiplayer")
             {
+                Console.WriteLine("You have chosen a multiplayer game against another person");
                 playerOne = new Human();
                 playerTwo = new Human();
-                Console.WriteLine("You have chosen a multiplayer game against another person");
-
             }
             else
             {
