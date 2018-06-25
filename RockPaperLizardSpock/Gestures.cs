@@ -6,16 +6,10 @@ using System.Threading.Tasks;
 
 namespace RockPaperLizardSpock
 {
-    class Gestures
+    public static class Gestures
     {
 
 
-
-
-        public Gestures()
-        {
-
-        }
 
         private static List<string> GestureList()
         {
@@ -31,6 +25,15 @@ namespace RockPaperLizardSpock
             GestureList.Add("Spock vaporizes Rock");
             GestureList.Add("Rock crushes Scissors");
             return GestureList;
+        }
+
+        public static void DisplayGestures(List<string> gestures)
+        {
+            GestureList();
+            foreach (string gesture in gestures)
+            {
+                Console.WriteLine(gesture);
+            }
         }
 
 

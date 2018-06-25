@@ -18,15 +18,6 @@ namespace RockPaperLizardSpock
 
         }
 
-        public void RunGame()
-        {
-            Console.WriteLine("Welcome to the game! This game is just like Rock, Paper, Scissors, but with the addition of lizard and spock. \n ");
-            SetGameType();
-
-            RunRound();
-
-
-        }
 
         public void SetGameType()
         {
@@ -40,7 +31,7 @@ namespace RockPaperLizardSpock
             {
                 Console.WriteLine("You have chosen a single player game against an AI");
                 playerOne = new Human();
-                playerTwo = new Computer();    
+                playerTwo = new Computer();
             }
             else if (gameType == "multiplayer")
             {
@@ -56,24 +47,38 @@ namespace RockPaperLizardSpock
 
         }
 
+        private void GetPlayerNames()
+        {
+            playerOne.GetPlayerName();
+            playerTwo.GetPlayerName();
+            Console.Clear();
+        }
 
+        private void GetGestureChoice();
+        {
+        playerOne.GetGestureChoice();
+        }
+
+
+
+   
+
+        public void RunGame()
+        {
+            Console.WriteLine("Welcome to the game! This game is just like Rock, Paper, Scissors, but with the addition of lizard and spock. \n ");
+            SetGameType();
+        GetPlayerNames();
+
+
+
+            RunRound();
+
+
+        }
 
 
         public void RunRound()
         {
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
